@@ -1,0 +1,7 @@
+Nov 09 11:02:10 server sshd[2011]: Failed password for root from 203.0.113.45 port 42001 ssh2
+Nov 09 11:02:18 server sshd[2012]: Failed password for root from 203.0.113.45 port 42002 ssh2
+Nov 09 11:02:25 server sshd[2013]: Failed password for admin from 203.0.113.45 port 42003 ssh2
+Nov 09 11:02:33 server sshd[2014]: Failed password for admin from 203.0.113.45 port 42004 ssh2
+Nov 09 11:02:41 server sshd[2015]: Failed password for sam from 203.0.113.45 port 42005 ssh2
+Nov 09 11:02:49 server sshd[2016]: Accepted password for sam from 203.0.113.45 port 42006 ssh2
+Nov 09 11:15:10 server sshd[2020]: Accepted publickey for admin from 192.168.1.5 port 49821 ssh2
