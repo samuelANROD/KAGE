@@ -1,9 +1,9 @@
-# KAGE
+# NetWard
 
 ### SYSTEM SECURITY ANALYTICS
 **Linux Authentication Intelligence**
 
-KAGE is a Python-based Linux authentication log analyzer designed to identify suspicious patterns and unusual activity in SSH authentication logs.
+NetWard is a Python-based Linux authentication log analyzer designed to identify suspicious patterns and unusual activity in SSH authentication logs.
 
 The project focuses on processing authentication records, detecting potentially suspicious behavior, and generating readable security reports.
 
@@ -11,11 +11,11 @@ The project focuses on processing authentication records, detecting potentially 
 
 ## Overview
 
-KAGE aims to provide a lightweight tool for analyzing Linux authentication logs and identifying patterns that may indicate security threats.
+NetWard aims to provide a lightweight tool for analyzing Linux authentication logs and identifying patterns that may indicate security threats.
 
 The analyzer will process local log files, extract SSH authentication events, group activity by IP address, and identify suspicious authentication patterns.
 
-KAGE is designed for offline analysis. It does not modify the original log files or attempt to block IP addresses.
+NetWard is designed for offline analysis. It does not modify the original log files or attempt to block IP addresses.
 
 ## Planned Features
 
@@ -32,7 +32,7 @@ KAGE is designed for offline analysis. It does not modify the original log files
 ## Project Structure
 
 ```text
-KAGE/
+netward/
 ├── main.py
 ├── log_reader.py
 ├── log_parser.py
@@ -65,7 +65,7 @@ Each module has a specific responsibility:
 
 ## Detection Approach
 
-KAGE will analyze authentication patterns using factors such as:
+NetWard will analyze authentication patterns using factors such as:
 
 - Number of failed authentication attempts.
 - Frequency of attempts within a time window.
@@ -83,7 +83,7 @@ These patterns will be treated as security indicators, not definitive proof of a
 
 ## Project Goals
 
-KAGE is also a practical software engineering project focused on developing skills in:
+NetWard is also a practical software engineering project focused on developing skills in:
 
 - Python programming and modular architecture.
 - File handling and text processing.
@@ -95,7 +95,7 @@ KAGE is also a practical software engineering project focused on developing skil
 
 ## Disclaimer
 
-KAGE is an educational security analysis project.
+NetWard is an educational security analysis project.
 
 It does not guarantee the detection of every attack, and its findings should be investigated in context. IP addresses alone cannot establish the identity or intent of a user.
 
