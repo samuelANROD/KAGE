@@ -1,9 +1,9 @@
-# NetWard
+# SherLOG
 
 ### SYSTEM SECURITY ANALYTICS
 **Linux Authentication Intelligence**
 
-NetWard is a Python-based Linux authentication log analyzer designed to identify suspicious patterns and unusual activity in SSH authentication logs.
+SherLOG is a Python-based Linux authentication log analyzer designed to identify suspicious patterns and unusual activity in SSH authentication logs.
 
 The project focuses on processing authentication records, detecting potentially suspicious behavior, and generating readable security reports.
 
@@ -11,11 +11,11 @@ The project focuses on processing authentication records, detecting potentially 
 
 ## Overview
 
-NetWard aims to provide a lightweight tool for analyzing Linux authentication logs and identifying patterns that may indicate security threats.
+SherLOG aims to provide a lightweight tool for analyzing Linux authentication logs and identifying patterns that may indicate security threats.
 
 The analyzer will process local log files, extract SSH authentication events, group activity by IP address, and identify suspicious authentication patterns.
 
-NetWard is designed for offline analysis. It does not modify the original log files or attempt to block IP addresses.
+SherLOG is designed for offline analysis. It does not modify the original log files or attempt to block IP addresses.
 
 ## Planned Features
 
@@ -32,7 +32,7 @@ NetWard is designed for offline analysis. It does not modify the original log fi
 ## Project Structure
 
 ```text
-netward/
+sherlog/
 ├── main.py
 ├── log_reader.py
 ├── log_parser.py
@@ -65,7 +65,7 @@ Each module has a specific responsibility:
 
 ## Detection Approach
 
-NetWard will analyze authentication patterns using factors such as:
+SherLOG will analyze authentication patterns using factors such as:
 
 - Number of failed authentication attempts.
 - Frequency of attempts within a time window.
@@ -83,7 +83,7 @@ These patterns will be treated as security indicators, not definitive proof of a
 
 ## Project Goals
 
-NetWard is also a practical software engineering project focused on developing skills in:
+SherLOG is also a practical software engineering project focused on developing skills in:
 
 - Python programming and modular architecture.
 - File handling and text processing.
@@ -95,7 +95,7 @@ NetWard is also a practical software engineering project focused on developing s
 
 ## Disclaimer
 
-NetWard is an educational security analysis project.
+SherLOG is an educational security analysis project.
 
 It does not guarantee the detection of every attack, and its findings should be investigated in context. IP addresses alone cannot establish the identity or intent of a user.
 
