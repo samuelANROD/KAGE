@@ -1,6 +1,4 @@
-
 from pathlib import Path
-
 
 def read_log(file_path):
     # Convert the received path into a Path object.
