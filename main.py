@@ -1,6 +1,6 @@
-
 from log_reader import read_log
 from log_parser import parse_log_line
+
 from security_analyzer import (
     group_events_by_ip,
     count_failed_attempts,
@@ -8,8 +8,14 @@ from security_analyzer import (
     detect_success_after_failures
 )
 
+from report_generator import generate_report
+
 # Read and parse the log file
-logs = read_log("samples/test.log")
+logs = read_log("samples/suspicious_activity.log")
+#daily_activity.log
+#suspicious_activity.log
+#brute_force_simulation.log
+#test.log
 
 events = []
 
@@ -31,15 +37,9 @@ brute_force_alerts = detect_brute_force(grouped_events)
 # Detect successful logins after failures
 success_alerts = detect_success_after_failures(grouped_events)
 
-# Display results
-print("\n=== FAILED ATTEMPTS ===")
-for ip, count in failed_attempts.items():
-    print(f"{ip}: {count} failed attempts")
-
-print("\n=== BRUTE FORCE DETECTION ===")
-for ip, alert in brute_force_alerts.items():
-    print(f"{ip}: {alert}")
-
-print("\n=== SUCCESS AFTER FAILURES ===")
-for ip, alerts in success_alerts.items():
-    print(f"{ip}: {alerts}")
+generate_report(
+    events,
+    failed_attempts,
+    brute_force_alerts,
+    success_alerts
+)
